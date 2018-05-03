@@ -28,25 +28,13 @@ def decode_char(char):
             '<' + char + '> does not exist in the morse alphabet'
         )
 
-    for k, v in CODE.items():
-        if v == char:
-            return k
+    return filter(lambda x: x[1] == char, CODE.items())[0][0]
 
 
 def encode(string):
-    encoded_string = ''
-
-    for i, char in enumerate(string):
-        encoded_string += encode_char(char)
-        encoded_string += ' ' if i < len(string) - 1 else ''
-
-    return encoded_string
+    return ''.join([encode_char(char) + (' ' if i < len(string) - 1 else '')
+                    for i, char in enumerate(string)])
 
 
 def decode(string):
-    decoded_string = ''
-
-    for i, char in enumerate(string.split(' ')):
-        decoded_string += decode_char(char)
-
-    return decoded_string
+    return ''.join([decode_char(char) for char in string.split(' ')])
