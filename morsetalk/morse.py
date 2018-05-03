@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from morsetalk.alphabet import CODE
 from morsetalk.exceptions import MorseEncodeException, MorseDecodeException
 
