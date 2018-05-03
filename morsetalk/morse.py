@@ -15,6 +15,9 @@ def new_char():
 
 
 def encode_char(char):
+    if not char:
+        return ''
+
     char = char.upper()
 
     if char not in CODE:
@@ -26,6 +29,9 @@ def encode_char(char):
 
 
 def decode_char(char):
+    if not char:
+        return ''
+
     char = char.upper()
 
     if char not in CODE.values():
