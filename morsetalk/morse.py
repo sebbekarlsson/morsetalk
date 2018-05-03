@@ -1,5 +1,5 @@
 from morsetalk.alphabet import CODE
-from morsetalk.exceptions import MorseEncodeException
+from morsetalk.exceptions import MorseEncodeException, MorseDecodeException
 
 
 def encode_char(char):
@@ -17,7 +17,7 @@ def decode_char(char):
     char = char.upper()
 
     if char not in CODE.values():
-        raise MorseEncodeException(
+        raise MorseDecodeException(
             '<' + char + '> does not exist in the morse alphabet'
         )
 
