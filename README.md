@@ -28,3 +28,7 @@
 > Clone down the repository and run:
 
     python setup.py install
+
+> Or run:
+
+    pip install morsetalk
