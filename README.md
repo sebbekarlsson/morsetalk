@@ -1,6 +1,8 @@
 # morsetalk
 > Library and Command Line tool to encode and decode Morse Code.
 
+![gif.gif](gif.gif)
+
 ## Extended
 > The morse code used in this software is extended by using:  
 > [https://github.com/agwells/dotdash-keyboard-android/wiki/Wells-extended-Morse-code](https://github.com/agwells/dotdash-keyboard-android/wiki/Wells-extended-Morse-code)
