@@ -7,7 +7,7 @@ def encode_char(char):
 
     if char not in CODE:
         raise MorseEncodeException(
-            char + ' does not exist in the morse alphabet'
+            '<' + char + '> does not exist in the morse alphabet'
         )
 
     return CODE[char]
