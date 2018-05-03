@@ -7,6 +7,7 @@
 
     import morsetalk.morse as morse
 
+    
     print(morse.encode('hello world'))
     # .... . .-.. .-.. --- / .-- --- .-. .-.. -..
 
