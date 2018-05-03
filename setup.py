@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='morsetalk',
-    version='1.1',
+    version='1.1.2',
     install_requires=[
     ],
     packages=[
